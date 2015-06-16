@@ -4,10 +4,10 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import FeatureAgglomeration
 from sklearn.feature_extraction.image import grid_to_graph
+from sklearn.decomposition import PCA
+from sklearn.feature_selection import SelectKBest, f_regression
 
-
-N_JOBS = -1
-
+N_JOBS = 1
 
 class Regressor(BaseEstimator):
     def __init__(self):
