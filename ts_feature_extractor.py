@@ -43,7 +43,7 @@ class FeatureExtractor(object):
 
         X = []
         for k in valid_range:
-            X.append(data[k - 2:k + 1]])
+            X.append(data[k - 2:k + 1])
         X = np.array(X)
 
         return X
